@@ -13,6 +13,7 @@
 		62E70BD821902EC6003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BB1219024E9003ABFBC /* main.c */; };
 		62E70BE021903493003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BDF21903493003ABFBC /* main.c */; };
 		62E70BEB21903870003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BEA21903870003ABFBC /* main.c */; };
+		62E70BF621904886003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BF521904886003ABFBC /* main.c */; };
 		62EC2922218A0784005F9082 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62EC2921218A0784005F9082 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		62E70BF121904886003ABFBC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		62EC2918218A0744005F9082 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +105,8 @@
 		62E70BDF21903493003ABFBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E70BE821903870003ABFBC /* 007-字符串分割 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "007-字符串分割"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E70BEA21903870003ABFBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62E70BF321904886003ABFBC /* 008-基本链表的创建 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "008-基本链表的创建"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E70BF521904886003ABFBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62EC291A218A0744005F9082 /* 001-数组管理学生成绩 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "001-数组管理学生成绩"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EC2921218A0784005F9082 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +148,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		62E70BE521903870003ABFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E70BF021904886003ABFBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,6 +219,14 @@
 			path = "007-字符串分割";
 			sourceTree = "<group>";
 		};
+		62E70BF421904886003ABFBC /* 008-基本链表的创建 */ = {
+			isa = PBXGroup;
+			children = (
+				62E70BF521904886003ABFBC /* main.c */,
+			);
+			path = "008-基本链表的创建";
+			sourceTree = "<group>";
+		};
 		62EC28ED218A03E6005F9082 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +237,7 @@
 				62E70BD121902E37003ABFBC /* 005-字符串插入 */,
 				62E70BDE21903493003ABFBC /* 006-提取子字符串 */,
 				62E70BE921903870003ABFBC /* 007-字符串分割 */,
+				62E70BF421904886003ABFBC /* 008-基本链表的创建 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,6 +252,7 @@
 				62E70BD021902E37003ABFBC /* 005-字符串插入 */,
 				62E70BDD21903493003ABFBC /* 006-提取子字符串 */,
 				62E70BE821903870003ABFBC /* 007-字符串分割 */,
+				62E70BF321904886003ABFBC /* 008-基本链表的创建 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +370,23 @@
 			productReference = 62E70BE821903870003ABFBC /* 007-字符串分割 */;
 			productType = "com.apple.product-type.tool";
 		};
+		62E70BF221904886003ABFBC /* 008-基本链表的创建 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62E70BF721904886003ABFBC /* Build configuration list for PBXNativeTarget "008-基本链表的创建" */;
+			buildPhases = (
+				62E70BEF21904886003ABFBC /* Sources */,
+				62E70BF021904886003ABFBC /* Frameworks */,
+				62E70BF121904886003ABFBC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "008-基本链表的创建";
+			productName = "008-基本链表的创建";
+			productReference = 62E70BF321904886003ABFBC /* 008-基本链表的创建 */;
+			productType = "com.apple.product-type.tool";
+		};
 		62EC2919218A0744005F9082 /* 001-数组管理学生成绩 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62EC291E218A0744005F9082 /* Build configuration list for PBXNativeTarget "001-数组管理学生成绩" */;
@@ -385,6 +431,9 @@
 					62E70BE721903870003ABFBC = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					62E70BF221904886003ABFBC = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					62EC2919218A0744005F9082 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -409,6 +458,7 @@
 				62E70BCF21902E37003ABFBC /* 005-字符串插入 */,
 				62E70BDC21903493003ABFBC /* 006-提取子字符串 */,
 				62E70BE721903870003ABFBC /* 007-字符串分割 */,
+				62E70BF221904886003ABFBC /* 008-基本链表的创建 */,
 			);
 		};
 /* End PBXProject section */
@@ -459,6 +509,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62E70BEB21903870003ABFBC /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E70BEF21904886003ABFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E70BF621904886003ABFBC /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +642,26 @@
 			name = Debug;
 		};
 		62E70BEE21903870003ABFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62E70BF821904886003ABFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62E70BF921904886003ABFBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -777,6 +855,15 @@
 			buildConfigurations = (
 				62E70BED21903870003ABFBC /* Debug */,
 				62E70BEE21903870003ABFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E70BF721904886003ABFBC /* Build configuration list for PBXNativeTarget "008-基本链表的创建" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E70BF821904886003ABFBC /* Debug */,
+				62E70BF921904886003ABFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
