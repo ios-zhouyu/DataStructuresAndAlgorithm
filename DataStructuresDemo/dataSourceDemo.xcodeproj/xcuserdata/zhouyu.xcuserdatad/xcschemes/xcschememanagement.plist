@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>009-带头结点链表头插法.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>01数组和字符串.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

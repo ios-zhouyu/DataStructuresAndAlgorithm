@@ -77,7 +77,7 @@ void loopThroughLink(LinkList head) {
     }
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     
     //初始化头结点
     LinkList head = initializeList();
