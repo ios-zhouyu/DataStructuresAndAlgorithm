@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6292E6232191818A00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E6222191818A00D5616C /* main.c */; };
+		6292E64421918C1D00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E64321918C1D00D5616C /* main.c */; };
 		62E70BBD21902800003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BBC21902800003ABFBC /* main.c */; };
 		62E70BC821902B03003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BC721902B03003ABFBC /* main.c */; };
 		62E70BD321902E37003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BD221902E37003ABFBC /* main.c */; };
@@ -20,6 +21,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6292E61E2191818A00D5616C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6292E63F21918C1D00D5616C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -105,6 +115,8 @@
 /* Begin PBXFileReference section */
 		6292E6202191818A00D5616C /* 009-带头结点链表头插法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "009-带头结点链表头插法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6292E6222191818A00D5616C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6292E64121918C1D00D5616C /* 010-带头结点链表获取长度 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "010-带头结点链表获取长度"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6292E64321918C1D00D5616C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E70BAF219024E8003ABFBC /* 002-计算字符串的长度 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "002-计算字符串的长度"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E70BB1219024E9003ABFBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E70BBA21902800003ABFBC /* 003-字符串拷贝 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "003-字符串拷贝"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +137,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		6292E61D2191818A00D5616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6292E63E21918C1D00D5616C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,6 +217,14 @@
 			path = "009-带头结点链表头插法";
 			sourceTree = "<group>";
 		};
+		6292E64221918C1D00D5616C /* 010-带头结点链表获取长度 */ = {
+			isa = PBXGroup;
+			children = (
+				6292E64321918C1D00D5616C /* main.c */,
+			);
+			path = "010-带头结点链表获取长度";
+			sourceTree = "<group>";
+		};
 		62E70BB0219024E9003ABFBC /* 002-计算字符串的长度 */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +293,7 @@
 				62E70BE921903870003ABFBC /* 007-字符串分割 */,
 				62E70BF421904886003ABFBC /* 008-基本链表的创建(带头结点) */,
 				6292E6212191818A00D5616C /* 009-带头结点链表头插法 */,
+				6292E64221918C1D00D5616C /* 010-带头结点链表获取长度 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -282,6 +310,7 @@
 				62E70BE821903870003ABFBC /* 007-字符串分割 */,
 				62E70BF321904886003ABFBC /* 008-基本链表的创建 */,
 				6292E6202191818A00D5616C /* 009-带头结点链表头插法 */,
+				6292E64121918C1D00D5616C /* 010-带头结点链表获取长度 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +341,23 @@
 			name = "009-带头结点链表头插法";
 			productName = "009-带头结点链表头插法";
 			productReference = 6292E6202191818A00D5616C /* 009-带头结点链表头插法 */;
+			productType = "com.apple.product-type.tool";
+		};
+		6292E64021918C1D00D5616C /* 010-带头结点链表获取长度 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6292E64521918C1D00D5616C /* Build configuration list for PBXNativeTarget "010-带头结点链表获取长度" */;
+			buildPhases = (
+				6292E63D21918C1D00D5616C /* Sources */,
+				6292E63E21918C1D00D5616C /* Frameworks */,
+				6292E63F21918C1D00D5616C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "010-带头结点链表获取长度";
+			productName = "010-带头结点链表获取长度";
+			productReference = 6292E64121918C1D00D5616C /* 010-带头结点链表获取长度 */;
 			productType = "com.apple.product-type.tool";
 		};
 		62E70BAE219024E8003ABFBC /* 002-计算字符串的长度 */ = {
@@ -462,6 +508,9 @@
 					6292E61F2191818A00D5616C = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					6292E64021918C1D00D5616C = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					62E70BAE219024E8003ABFBC = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -509,6 +558,7 @@
 				62E70BE721903870003ABFBC /* 007-字符串分割 */,
 				62E70BF221904886003ABFBC /* 008-基本链表的创建 */,
 				6292E61F2191818A00D5616C /* 009-带头结点链表头插法 */,
+				6292E64021918C1D00D5616C /* 010-带头结点链表获取长度 */,
 			);
 		};
 /* End PBXProject section */
@@ -519,6 +569,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6292E6232191818A00D5616C /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6292E63D21918C1D00D5616C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6292E64421918C1D00D5616C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +658,26 @@
 			name = Debug;
 		};
 		6292E6262191818A00D5616C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6292E64621918C1D00D5616C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6292E64721918C1D00D5616C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -890,6 +968,15 @@
 			buildConfigurations = (
 				6292E6252191818A00D5616C /* Debug */,
 				6292E6262191818A00D5616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6292E64521918C1D00D5616C /* Build configuration list for PBXNativeTarget "010-带头结点链表获取长度" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6292E64621918C1D00D5616C /* Debug */,
+				6292E64721918C1D00D5616C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
