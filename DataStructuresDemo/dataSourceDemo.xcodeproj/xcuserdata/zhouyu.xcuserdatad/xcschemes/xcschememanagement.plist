@@ -79,6 +79,21 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>015-带头结点单链表交换两个结点的位置.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>016-带头结点单链表反转链表.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>017-带头结点单链表两表连接.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>01数组和字符串.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
