@@ -11,6 +11,8 @@
 		6292E64421918C1D00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E64321918C1D00D5616C /* main.c */; };
 		6292E64F2191966C00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E64E2191966C00D5616C /* main.c */; };
 		6292E65A2191ACC400D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E6592191ACC400D5616C /* main.c */; };
+		62E20A0A2191D7850049524D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E20A092191D7850049524D /* main.c */; };
+		62E20A152191EA540049524D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E20A142191EA540049524D /* main.c */; };
 		62E70BBD21902800003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BBC21902800003ABFBC /* main.c */; };
 		62E70BC821902B03003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BC721902B03003ABFBC /* main.c */; };
 		62E70BD321902E37003ABFBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E70BD221902E37003ABFBC /* main.c */; };
@@ -50,6 +52,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		6292E6552191ACC400D5616C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		62E20A052191D7850049524D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		62E20A102191EA540049524D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -141,6 +161,10 @@
 		6292E64E2191966C00D5616C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6292E6572191ACC400D5616C /* 012-单链表查找指定结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "012-单链表查找指定结点"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6292E6592191ACC400D5616C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62E20A072191D7850049524D /* 013-单链表删除指定结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "013-单链表删除指定结点"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E20A092191D7850049524D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62E20A122191EA540049524D /* 014-带头结点单链表清空链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "014-带头结点单链表清空链表"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E20A142191EA540049524D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E70BAF219024E8003ABFBC /* 002-计算字符串的长度 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "002-计算字符串的长度"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E70BB1219024E9003ABFBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E70BBA21902800003ABFBC /* 003-字符串拷贝 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "003-字符串拷贝"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +206,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6292E6542191ACC400D5616C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E20A042191D7850049524D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E20A0F2191EA540049524D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,20 +301,36 @@
 			path = "010-带头结点链表获取长度";
 			sourceTree = "<group>";
 		};
-		6292E64D2191966C00D5616C /* 011-单链表指定位置插入结点 */ = {
+		6292E64D2191966C00D5616C /* 011-带头结点单链表指定位置插入结点 */ = {
 			isa = PBXGroup;
 			children = (
 				6292E64E2191966C00D5616C /* main.c */,
 			);
-			path = "011-单链表指定位置插入结点";
+			path = "011-带头结点单链表指定位置插入结点";
 			sourceTree = "<group>";
 		};
-		6292E6582191ACC400D5616C /* 012-单链表查找指定结点 */ = {
+		6292E6582191ACC400D5616C /* 012-带头结点单链表查找指定结点 */ = {
 			isa = PBXGroup;
 			children = (
 				6292E6592191ACC400D5616C /* main.c */,
 			);
-			path = "012-单链表查找指定结点";
+			path = "012-带头结点单链表查找指定结点";
+			sourceTree = "<group>";
+		};
+		62E20A082191D7850049524D /* 013-带头结点单链表删除指定结点 */ = {
+			isa = PBXGroup;
+			children = (
+				62E20A092191D7850049524D /* main.c */,
+			);
+			path = "013-带头结点单链表删除指定结点";
+			sourceTree = "<group>";
+		};
+		62E20A132191EA540049524D /* 014-带头结点单链表清空链表 */ = {
+			isa = PBXGroup;
+			children = (
+				62E20A142191EA540049524D /* main.c */,
+			);
+			path = "014-带头结点单链表清空链表";
 			sourceTree = "<group>";
 		};
 		62E70BB0219024E9003ABFBC /* 002-计算字符串的长度 */ = {
@@ -348,8 +402,10 @@
 				62E70BF421904886003ABFBC /* 008-基本链表的创建(带头结点) */,
 				6292E6212191818A00D5616C /* 009-带头结点链表头插法 */,
 				6292E64221918C1D00D5616C /* 010-带头结点链表获取长度 */,
-				6292E64D2191966C00D5616C /* 011-单链表指定位置插入结点 */,
-				6292E6582191ACC400D5616C /* 012-单链表查找指定结点 */,
+				6292E64D2191966C00D5616C /* 011-带头结点单链表指定位置插入结点 */,
+				6292E6582191ACC400D5616C /* 012-带头结点单链表查找指定结点 */,
+				62E20A082191D7850049524D /* 013-带头结点单链表删除指定结点 */,
+				62E20A132191EA540049524D /* 014-带头结点单链表清空链表 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -369,6 +425,8 @@
 				6292E64121918C1D00D5616C /* 010-带头结点链表获取长度 */,
 				6292E64C2191966C00D5616C /* 011-单链表指定位置插入结点 */,
 				6292E6572191ACC400D5616C /* 012-单链表查找指定结点 */,
+				62E20A072191D7850049524D /* 013-单链表删除指定结点 */,
+				62E20A122191EA540049524D /* 014-带头结点单链表清空链表 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -450,6 +508,40 @@
 			name = "012-单链表查找指定结点";
 			productName = "012-单链表查找指定结点";
 			productReference = 6292E6572191ACC400D5616C /* 012-单链表查找指定结点 */;
+			productType = "com.apple.product-type.tool";
+		};
+		62E20A062191D7850049524D /* 013-单链表删除指定结点 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62E20A0B2191D7850049524D /* Build configuration list for PBXNativeTarget "013-单链表删除指定结点" */;
+			buildPhases = (
+				62E20A032191D7850049524D /* Sources */,
+				62E20A042191D7850049524D /* Frameworks */,
+				62E20A052191D7850049524D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "013-单链表删除指定结点";
+			productName = "013-单链表删除指定结点";
+			productReference = 62E20A072191D7850049524D /* 013-单链表删除指定结点 */;
+			productType = "com.apple.product-type.tool";
+		};
+		62E20A112191EA540049524D /* 014-带头结点单链表清空链表 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62E20A162191EA540049524D /* Build configuration list for PBXNativeTarget "014-带头结点单链表清空链表" */;
+			buildPhases = (
+				62E20A0E2191EA540049524D /* Sources */,
+				62E20A0F2191EA540049524D /* Frameworks */,
+				62E20A102191EA540049524D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "014-带头结点单链表清空链表";
+			productName = "014-带头结点单链表清空链表";
+			productReference = 62E20A122191EA540049524D /* 014-带头结点单链表清空链表 */;
 			productType = "com.apple.product-type.tool";
 		};
 		62E70BAE219024E8003ABFBC /* 002-计算字符串的长度 */ = {
@@ -609,6 +701,12 @@
 					6292E6562191ACC400D5616C = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					62E20A062191D7850049524D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					62E20A112191EA540049524D = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					62E70BAE219024E8003ABFBC = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -659,6 +757,8 @@
 				6292E64021918C1D00D5616C /* 010-带头结点链表获取长度 */,
 				6292E64B2191966C00D5616C /* 011-单链表指定位置插入结点 */,
 				6292E6562191ACC400D5616C /* 012-单链表查找指定结点 */,
+				62E20A062191D7850049524D /* 013-单链表删除指定结点 */,
+				62E20A112191EA540049524D /* 014-带头结点单链表清空链表 */,
 			);
 		};
 /* End PBXProject section */
@@ -693,6 +793,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6292E65A2191ACC400D5616C /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E20A032191D7850049524D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E20A0A2191D7850049524D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E20A0E2191EA540049524D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E20A152191EA540049524D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +955,46 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N88ZLS3WBS;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62E20A0C2191D7850049524D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62E20A0D2191D7850049524D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62E20A172191EA540049524D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62E20A182191EA540049524D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1151,6 +1307,24 @@
 			buildConfigurations = (
 				6292E65C2191ACC400D5616C /* Debug */,
 				6292E65D2191ACC400D5616C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E20A0B2191D7850049524D /* Build configuration list for PBXNativeTarget "013-单链表删除指定结点" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E20A0C2191D7850049524D /* Debug */,
+				62E20A0D2191D7850049524D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E20A162191EA540049524D /* Build configuration list for PBXNativeTarget "014-带头结点单链表清空链表" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E20A172191EA540049524D /* Debug */,
+				62E20A182191EA540049524D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -44,12 +44,11 @@ LinkList createNode() {
 
 LinkList createList(LinkList head) {
     LinkList temp = head;
-    char nameArr[20] = "qwertyuiopasdfghjklz";
+    char nameArr[20][20] = {"zhouyu00", "zhouyu01", "zhouyu02", "zhouyu03", "zhouyu04", "zhouyu05", "zhouyu06", "zhouyu07", "zhouyu08", "zhouyu09", "zhouyu10", "zhouyu11", "zhouyu12", "zhouyu13", "zhouyu14", "zhouyu15", "zhouyu16", "zhouyu17", "zhouyu18", "zhouyu19"};
     for (int i = 0; i < MAX_SIZE; i++) {
         LinkList node = createNode();
         node->num = i;
-        node->name = &nameArr[i];
-        
+        node->name = nameArr[i];
         if (temp->next == NULL) {
             temp->next = node;
         } else {
@@ -96,4 +95,27 @@ int main() {
     }
     
     return 0;
+}
+
+
+void charArr() {
+    char nameArr[20][20] = {"zhouyu00", "zhouyu01", "zhouyu02", "zhouyu03", "zhouyu04", "zhouyu05", "zhouyu06", "zhouyu07", "zhouyu08", "zhouyu09", "zhouyu10", "zhouyu11", "zhouyu12", "zhouyu13", "zhouyu14", "zhouyu15", "zhouyu16", "zhouyu17", "zhouyu18", "zhouyu19"};
+    char (*p)[20] = nameArr;
+    
+    //正确
+    for (int i = 0; i < 20; i++) {
+        char *name = nameArr[i];
+        printf("%s\n", name);
+    }
+    printf("--------------------------------------------------------\n");
+    //正确
+    for (int i = 0; i < 20; i++) {
+        printf("%s\n", *(p++));
+    }
+    printf("--------------------------------------------------------\n");
+    //错误
+    for (int i = 0; i < 20; i++) {
+        printf("%s\n", (*p)[i]);
+    }
+    printf("--------------------------------------------------------\n");
 }
