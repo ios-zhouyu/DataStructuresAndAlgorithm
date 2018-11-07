@@ -63,6 +63,23 @@ void loopList(LinkList list) {
     }
 }
 
+LinkList connectTwoList(LinkList list1, LinkList list2) {
+    LinkList temp = list1;
+    while (temp->next != NULL) {
+        temp = temp->next;
+    }
+    
+    LinkList ptr = list2;
+    ptr = ptr->next;//去掉头结点
+    while (ptr != NULL) {
+        temp->next = ptr;
+        temp = ptr;
+        ptr = ptr->next;
+    }
+    
+    return list1;
+}
+
 int main(int argc, const char * argv[]) {
     
     LinkList head1 = initialList();
@@ -72,5 +89,8 @@ int main(int argc, const char * argv[]) {
     loopList(list1);
     printf("------------------------------------\n");
     loopList(list2);
+    printf("------------------------------------\n");
+    LinkList list3 = connectTwoList(list1,list2);
+    loopList(list3);
     return 0;
 }
