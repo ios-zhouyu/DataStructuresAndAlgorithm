@@ -1,6 +1,6 @@
 //
 //  main.c
-//  016-带头节点单链表反转链表
+//  016-带头结点单链表反转链表
 //
 //  Created by zhouyu on 11/7/18.
 //  Copyright © 2018 zhouyu. All rights reserved.
@@ -61,20 +61,20 @@ void looopList(LinkList list) {
     }
 }
 
-//指针与节点的关系: 指针与指针域的区别
+//指针与结点的关系: 指针与指针域的区别
 //p指向结点的指针, p->next: 在等式右边代表取值,取下个结点; 在等式左边代表赋值,改变指针指向
 LinkList reverseList(LinkList list) {
     LinkList last, current, temp;//temp保存每次循环时取出的当前结点的下一个结点
     last = NULL;//初始化指针,保存每次循环的最后结点
-    current = list->next;//取出开始节点
-    list->next = NULL;//改变头结点指针域指向,将头节点断开
+    current = list->next;//取出开始结点
+    list->next = NULL;//改变头结点指针域指向,将头结点断开
     while (current != NULL) {
         temp = current->next;//下一结点赋值给temp
-        current->next = last;//断开当前节点,改变节点指向,指向上一次断开时的尾节点
-        last = current;//将断开的节点作为尾结点
+        current->next = last;//断开当前结点,改变结点指向,指向上一次断开时的尾结点
+        last = current;//将断开的结点作为尾结点
         current = temp;//下一个结点作为当前结点
     }
-    list->next = last;//将倒置的节点链接到头节点
+    list->next = last;//将倒置的结点链接到头结点
     return list;
 }
 

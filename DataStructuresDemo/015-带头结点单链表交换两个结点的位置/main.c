@@ -80,25 +80,42 @@ void exchangeTwoNode(LinkList list, int num1, int num2) {
     }
     LinkList temp = list;
     
-    LinkList ptr1, ptr2;
+    LinkList ptr1, ptr2, ptr3, ptr4;
+    ptr1 = ptr2 = ptr3 = ptr4 = NULL;
     
     while (temp != NULL) {
-        if (temp->num == num1 ) {
+        if (temp->next->num == num1 ) {
             ptr1 = temp;
+            ptr3 = temp->next;
         }
-        if (temp->num == num2) {
+        if (temp->next->num == num2) {
             ptr2 = temp;
+            ptr4 = temp->next;
         }
-        
         temp = temp->next;
     }
     
+    if (ptr1->next == NULL || ptr2->next == NULL) {
+        printf("atleast one of the is not exist!");
+        exit(1);
+    }
+    
+    ptr1->next = ptr4;
+    ptr2->next = ptr3;
+    ptr3->next = ptr1->next->next;
+    ptr4->next = ptr2->next->next;
 }
 
 int main() {
     
     LinkList head = initializeList();
     LinkList list = createList(head);
+    loopList(list);
+    printf("----------------------------------\n");
+    
+    exchangeTwoNode(list, 1003, 1009);
+    
+    printf("----------------------------------\n");
     loopList(list);
     
     return 0;
