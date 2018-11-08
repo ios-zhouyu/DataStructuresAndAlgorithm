@@ -10,7 +10,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_SIZE 20
+#define MAX_SIZE 5
+
+static int listNum = 1000;
 
 struct List {
     int num;
@@ -35,14 +37,16 @@ LinkList createNode() {
 }
 
 LinkList createList(LinkList nullList) {
+    
     LinkList temp = nullList;
     for (int i = 0; i < MAX_SIZE; i++) {
         LinkList node = createNode();
-        node->num = i + 1000;
+        node->num = i + listNum;
         //头插法
         node->next = temp;
         temp = node;
     }
+    listNum *= 2;
     return temp;
 }
 
@@ -64,11 +68,38 @@ int getListLength(LinkList list) {
     return length;
 }
 
+LinkList connectTwoLists(LinkList list1, LinkList list2) {
+    LinkList temp = list1;
+    
+    if (temp == NULL) {
+        list1 = list2;
+    }
+    
+    LinkList ptr = NULL;//记录最后一个点
+    while (temp != NULL) {
+        if (temp != NULL && temp->next == NULL) {
+            ptr = temp;
+        }
+        temp = temp->next;
+    }
+    ptr->next = list2;
+    
+    return list1;
+}
+
 int main() {
     LinkList headPointer = NULL;
     LinkList nullList = initialList(headPointer);
-    LinkList list = createList(nullList);
-    loopList(list);
+    LinkList list1 = createList(nullList);
+    loopList(list1);
+    printf("----------------------------\n");
+    
+    LinkList list2 = createList(nullList);
+    loopList(list2);
+    printf("----------------------------\n");
+    
+    LinkList list3 = connectTwoLists(list1, list2);
+    loopList(list3);
     printf("----------------------------\n");
     
     return 0;
