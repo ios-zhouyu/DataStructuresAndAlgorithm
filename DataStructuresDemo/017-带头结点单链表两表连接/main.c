@@ -70,12 +70,7 @@ LinkList connectTwoList(LinkList list1, LinkList list2) {
     }
     
     LinkList ptr = list2;
-    ptr = ptr->next;//去掉头结点
-    while (ptr != NULL) {
-        temp->next = ptr;
-        temp = ptr;
-        ptr = ptr->next;
-    }
+    temp->next = ptr->next;//去掉头结点
     
     return list1;
 }
