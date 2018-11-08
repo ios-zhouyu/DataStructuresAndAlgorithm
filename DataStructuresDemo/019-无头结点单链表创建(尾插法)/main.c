@@ -60,12 +60,24 @@ void loopList(LinkList list) {
     }
 }
 
+int getListLength(LinkList list) {
+    int length = 0;
+    LinkList temp = list;
+    while (temp != NULL) {
+        length++;
+        temp = temp->next;
+    }
+    printf("the length of this list is %d\n",length);
+    return length;
+}
+
 int main() {
     
     LinkList headPointer = NULL;
     LinkList nullList = initializeList(headPointer);
     LinkList list = createList(nullList);
     loopList(list);
+    int length = getListLength(list);
     
     return 0;
 }

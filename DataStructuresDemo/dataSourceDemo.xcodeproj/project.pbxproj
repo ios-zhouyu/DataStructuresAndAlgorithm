@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6275DF3921941F4F00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF3821941F4F00B25D58 /* main.c */; };
 		6292E6232191818A00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E6222191818A00D5616C /* main.c */; };
 		6292E64421918C1D00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E64321918C1D00D5616C /* main.c */; };
 		6292E64F2191966C00D5616C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6292E64E2191966C00D5616C /* main.c */; };
@@ -29,6 +30,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6275DF3421941F4F00B25D58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6292E61E2191818A00D5616C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +213,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6275DF3621941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "020-无头结点单链表指定位置插入结点"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6275DF3821941F4F00B25D58 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6292E6202191818A00D5616C /* 009-带头结点链表头插法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "009-带头结点链表头插法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6292E6222191818A00D5616C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6292E64121918C1D00D5616C /* 010-带头结点链表获取长度 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "010-带头结点链表获取长度"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +256,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6275DF3321941F4F00B25D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6292E61D2191818A00D5616C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +399,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6275DF3721941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {
+			isa = PBXGroup;
+			children = (
+				6275DF3821941F4F00B25D58 /* main.c */,
+			);
+			path = "020-无头结点单链表指定位置插入结点";
+			sourceTree = "<group>";
+		};
 		6292E6212191818A00D5616C /* 009-带头结点链表头插法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +573,7 @@
 				62E20A342191F2910049524D /* 017-带头结点单链表两表连接 */,
 				62ABDF8B2193F405004120F4 /* 018-无头结点单链表创建(头插法) */,
 				62ABDF96219416F6004120F4 /* 019-无头结点单链表创建(尾插法) */,
+				6275DF3721941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -572,6 +600,7 @@
 				62E20A332191F2910049524D /* 017-带头结点单链表两表连接 */,
 				62ABDF8A2193F405004120F4 /* 018-无头结点单链表创建 */,
 				62ABDF95219416F6004120F4 /* 019-无头结点单链表创建(尾插法) */,
+				6275DF3621941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -587,6 +616,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6275DF3521941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6275DF3C21941F4F00B25D58 /* Build configuration list for PBXNativeTarget "020-无头结点单链表指定位置插入结点" */;
+			buildPhases = (
+				6275DF3221941F4F00B25D58 /* Sources */,
+				6275DF3321941F4F00B25D58 /* Frameworks */,
+				6275DF3421941F4F00B25D58 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "020-无头结点单链表指定位置插入结点";
+			productName = "020-无头结点单链表指定位置插入结点";
+			productReference = 6275DF3621941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */;
+			productType = "com.apple.product-type.tool";
+		};
 		6292E61F2191818A00D5616C /* 009-带头结点链表头插法 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6292E6242191818A00D5616C /* Build configuration list for PBXNativeTarget "009-带头结点链表头插法" */;
@@ -919,6 +965,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = zhouyu;
 				TargetAttributes = {
+					6275DF3521941F4F00B25D58 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					6292E61F2191818A00D5616C = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -1009,11 +1058,20 @@
 				62E20A322191F2910049524D /* 017-带头结点单链表两表连接 */,
 				62ABDF892193F405004120F4 /* 018-无头结点单链表创建 */,
 				62ABDF94219416F6004120F4 /* 019-无头结点单链表创建(尾插法) */,
+				6275DF3521941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6275DF3221941F4F00B25D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6275DF3921941F4F00B25D58 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6292E61C2191818A00D5616C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1169,6 +1227,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6275DF3A21941F4F00B25D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6275DF3B21941F4F00B25D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6292E6252191818A00D5616C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1665,6 +1743,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6275DF3C21941F4F00B25D58 /* Build configuration list for PBXNativeTarget "020-无头结点单链表指定位置插入结点" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6275DF3A21941F4F00B25D58 /* Debug */,
+				6275DF3B21941F4F00B25D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6292E6242191818A00D5616C /* Build configuration list for PBXNativeTarget "009-带头结点链表头插法" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
