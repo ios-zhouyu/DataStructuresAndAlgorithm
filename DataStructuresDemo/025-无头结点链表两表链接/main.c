@@ -75,14 +75,10 @@ LinkList connectTwoLists(LinkList list1, LinkList list2) {
         list1 = list2;
     }
     
-    LinkList ptr = NULL;//记录最后一个点
-    while (temp != NULL) {
-        if (temp != NULL && temp->next == NULL) {
-            ptr = temp;
-        }
+    while (temp->next != NULL) {
         temp = temp->next;
     }
-    ptr->next = list2;
+    temp->next = list2;
     
     return list1;
 }
