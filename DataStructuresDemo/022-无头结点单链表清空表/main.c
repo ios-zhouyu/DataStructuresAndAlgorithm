@@ -1,6 +1,6 @@
 //
 //  main.c
-//  021-无头结点单链表删除指定结点
+//  022-无头结点单链表清空表
 //
 //  Created by zhouyu on 2018/11/8.
 //  Copyright © 2018年 zhouyu. All rights reserved.
@@ -54,41 +54,22 @@ void loopList(LinkList list) {
     }
 }
 
-int checkNodeInList(LinkList list, int num) {
+int getListLength(LinkList list) {
+    int length = 0;
     while (list != NULL) {
-        if (list->num == num) {
-            return 1;
-        }
+        length++;
         list = list->next;
     }
-    return 0;
+    printf("the length of this list is %d\n", length);
+    return length;
 }
 
-LinkList deleteNode(LinkList list, int num) {
-    LinkList temp = list;
-    
-    if (checkNodeInList(list, num) == 0) {
-        printf("this node is not exist!\n");
-        exit(1);
+LinkList clearList(LinkList list) {
+    while (list != NULL) {
+        LinkList temp = list;
+        free(temp);
+        list = list->next;
     }
-    
-    int i = 1;
-    LinkList ptr = NULL;
-    while (temp != NULL) {
-        if (temp->num == num && i == 1) {//删除开始结点
-            list = list->next;
-            free(temp);
-            break;
-        } else if (temp->num == num) {
-            ptr->next = temp->next;//当前结点的上一个结点指针域指向当前结点的下一个结点
-            free(temp);
-            break;
-        }
-        ptr = temp;//记录上一个结点
-        temp = temp->next;
-        i++;
-    }
-    
     return list;
 }
 
@@ -100,9 +81,7 @@ int main() {
     loopList(list);
     printf("----------------------------\n");
     
-    LinkList newList = deleteNode(list, 1020);
-    loopList(newList);
-    printf("----------------------------\n");
-    
+    LinkList newList = clearList(list);
+    getListLength(newList);
     return 0;
 }
