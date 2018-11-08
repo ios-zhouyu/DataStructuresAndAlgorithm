@@ -19,8 +19,53 @@ struct List {
 typedef struct List Node;
 typedef Node * LinkList;
 
+LinkList initializeList(LinkList headPointer) {
+    headPointer = NULL;
+    return headPointer;
+}
+
+LinkList createNode() {
+    LinkList node = (LinkList)malloc(sizeof(Node));
+    if (!node) {
+        printf("create new node failed!\n");
+        exit(1);
+    }
+    node->next = NULL;
+    return node;
+}
+
+LinkList createList(LinkList nullList) {
+    LinkList temp = nullList;//nullList也即是头指针headPointer
+    LinkList firstNode = NULL;
+    for (int i = 0; i < MAX_SIZE; i++) {
+        LinkList node = createNode();
+        node->num = i + 1000;
+        
+        if (temp == NULL) {
+            temp = node;
+            firstNode = temp;//保留住头指针
+        } else {
+            temp->next = node;
+            temp = node;
+        }
+    }
+    return firstNode;
+}
+
+void loopList(LinkList list) {
+    LinkList temp = list;
+    while (temp != NULL) {
+        printf("%d\n", temp->num);
+        temp = temp->next;
+    }
+}
+
 int main() {
     
-    printf("Hello, World!\n");
+    LinkList headPointer = NULL;
+    LinkList nullList = initializeList(headPointer);
+    LinkList list = createList(nullList);
+    loopList(list);
+    
     return 0;
 }
