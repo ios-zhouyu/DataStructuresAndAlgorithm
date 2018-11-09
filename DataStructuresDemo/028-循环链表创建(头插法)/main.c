@@ -37,19 +37,25 @@ LinkList createNode() {
 LinkList createList(LinkList list) {
     LinkList temp = list;
     LinkList node = NULL;
+    //头插法: 记录最后一个结点
+    LinkList lastNode = NULL;
     for (int i = 0; i < MAX_SIZE; i++) {
         node = createNode();
         node->num = i + 1000;
         node->next = NULL;
+        
+        //头插法
         if (temp == NULL) {
-            temp = node;
-            list = node;
-        } else {
-            temp->next = node;
-            temp = node;
+            lastNode = node;
         }
+        node->next = temp;
+        temp = node;
     }
-    temp->next = list;//尾指针指向头指针
+
+    //头插法
+    lastNode->next = temp;
+    list = temp;
+    
     return list;
 }
 
@@ -62,7 +68,7 @@ void loopList(LinkList list) {
     } while (temp != list) ;//循环终止条件: 头尾相同
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     
     LinkList headPointer = NULL;
     LinkList nullList = initializeList(headPointer);
