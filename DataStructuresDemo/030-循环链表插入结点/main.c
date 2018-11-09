@@ -80,7 +80,7 @@ LinkList insertNode(LinkList list, LinkList node, int location) {
     }
     
     int length = 0;
-    LinkList ptr = NULL;
+    LinkList ptr = temp;
     do {
         if (location - 1 == length && location != 1) {
             node->next = ptr->next;
