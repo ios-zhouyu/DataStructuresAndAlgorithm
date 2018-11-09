@@ -43,16 +43,6 @@ LinkList createList(LinkList list) {
         node = createNode();
         node->num = i + 1000;
         
-        //尾插法
-//        if (temp == NULL) {
-//            temp = node;
-//            list = node;
-//        } else {
-//            temp->next = node;
-//            node->pre = temp;
-//            temp = node;
-//        }
-        
         //头插法
         node->next = temp;
         if (temp != NULL) {
