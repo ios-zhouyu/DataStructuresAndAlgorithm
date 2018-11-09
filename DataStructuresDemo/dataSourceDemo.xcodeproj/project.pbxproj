@@ -15,6 +15,7 @@
 		62196AAE2195836100D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196AAD2195836100D9E503 /* main.c */; };
 		62196AB9219583C400D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196AB8219583C400D9E503 /* main.c */; };
 		62196AC4219594C000D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196AC3219594C000D9E503 /* main.c */; };
+		62196ACF219595B700D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196ACE219595B700D9E503 /* main.c */; };
 		6275DF3921941F4F00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF3821941F4F00B25D58 /* main.c */; };
 		6275DF44219432EF00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF43219432EF00B25D58 /* main.c */; };
 		6275DF4F219439AA00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF4E219439AA00B25D58 /* main.c */; };
@@ -110,6 +111,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		62196ABF219594C000D9E503 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		62196ACA219595B700D9E503 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -389,6 +399,8 @@
 		62196AB8219583C400D9E503 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62196AC1219594C000D9E503 /* 036-无头结点双向链表创建(尾插法) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "036-无头结点双向链表创建(尾插法)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62196AC3219594C000D9E503 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62196ACC219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "037-无头结点双向链表插入和删除结点"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62196ACE219595B700D9E503 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6275DF3621941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "020-无头结点单链表指定位置插入结点"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6275DF3821941F4F00B25D58 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6275DF41219432EF00B25D58 /* 021-无头结点单链表删除指定结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "021-无头结点单链表删除指定结点"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -498,6 +510,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		62196ABE219594C000D9E503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62196AC9219595B700D9E503 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -767,6 +786,14 @@
 			path = "036-无头结点双向链表创建(尾插法)";
 			sourceTree = "<group>";
 		};
+		62196ACD219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */ = {
+			isa = PBXGroup;
+			children = (
+				62196ACE219595B700D9E503 /* main.c */,
+			);
+			path = "037-无头结点双向链表插入和删除结点";
+			sourceTree = "<group>";
+		};
 		6275DF3721941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,6 +1049,7 @@
 				62196AAC2195836100D9E503 /* 034-带头结点循环链表处理多项式相加 */,
 				62196AB7219583C400D9E503 /* 035-无头结点双向链表创建(头插法) */,
 				62196AC2219594C000D9E503 /* 036-无头结点双向链表创建(尾插法) */,
+				62196ACD219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1065,6 +1093,7 @@
 				62196AAB2195836100D9E503 /* 034-带头结点循环链表处理多项式相加 */,
 				62196AB6219583C400D9E503 /* 035-无头结点双向链表创建(头插法) */,
 				62196AC1219594C000D9E503 /* 036-无头结点双向链表创建(尾插法) */,
+				62196ACC219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1214,6 +1243,23 @@
 			name = "036-无头结点双向链表创建(尾插法)";
 			productName = "036-无头结点双向链表创建(尾插法)";
 			productReference = 62196AC1219594C000D9E503 /* 036-无头结点双向链表创建(尾插法) */;
+			productType = "com.apple.product-type.tool";
+		};
+		62196ACB219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62196AD0219595B700D9E503 /* Build configuration list for PBXNativeTarget "037-无头结点双向链表插入和删除结点" */;
+			buildPhases = (
+				62196AC8219595B700D9E503 /* Sources */,
+				62196AC9219595B700D9E503 /* Frameworks */,
+				62196ACA219595B700D9E503 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "037-无头结点双向链表插入和删除结点";
+			productName = "037-无头结点双向链表插入和删除结点";
+			productReference = 62196ACC219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */;
 			productType = "com.apple.product-type.tool";
 		};
 		6275DF3521941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {
@@ -1725,6 +1771,9 @@
 					62196AC0219594C000D9E503 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					62196ACB219595B700D9E503 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					6275DF3521941F4F00B25D58 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -1859,6 +1908,7 @@
 				62196AAA2195836100D9E503 /* 034-带头结点循环链表处理多项式相加 */,
 				62196AB5219583C400D9E503 /* 035-无头结点双向链表创建(头插法) */,
 				62196AC0219594C000D9E503 /* 036-无头结点双向链表创建(尾插法) */,
+				62196ACB219595B700D9E503 /* 037-无头结点双向链表插入和删除结点 */,
 			);
 		};
 /* End PBXProject section */
@@ -1925,6 +1975,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62196AC4219594C000D9E503 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62196AC8219595B700D9E503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62196ACF219595B700D9E503 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2306,6 +2364,26 @@
 			name = Debug;
 		};
 		62196AC7219594C000D9E503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62196AD1219595B700D9E503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62196AD2219595B700D9E503 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -3059,6 +3137,15 @@
 			buildConfigurations = (
 				62196AC6219594C000D9E503 /* Debug */,
 				62196AC7219594C000D9E503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62196AD0219595B700D9E503 /* Build configuration list for PBXNativeTarget "037-无头结点双向链表插入和删除结点" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62196AD1219595B700D9E503 /* Debug */,
+				62196AD2219595B700D9E503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
