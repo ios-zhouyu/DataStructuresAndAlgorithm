@@ -78,9 +78,6 @@ int isOperator(char operator) {
 }
 
 int calculateTwoNums(char operator, int num1, int num2) {
-    if (isOperator(operator) == 0) {
-        exit(1);
-    }
     switch (operator) {
         case '+':
             return num1 + num2;
