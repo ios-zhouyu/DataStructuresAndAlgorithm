@@ -93,7 +93,7 @@ int calculateTwoNums(char operator, int num1, int num2) {
 }
 
 int main(int argc, const char * argv[]) {
-    char expression[100] = "69*6+";//表达式
+    char expression[100] = "69*6+";//后序表达式
     int num1, num2;//取出的相邻两个数
     int result = 0;//两数计算结果
     
