@@ -12,6 +12,7 @@
 		620C7B97219AAE8600AD5FBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 620C7B96219AAE8600AD5FBC /* main.c */; };
 		620C7BA2219AAE9A00AD5FBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 620C7BA1219AAE9A00AD5FBC /* main.c */; };
 		620C7BAD219AD0DC00AD5FBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 620C7BAC219AD0DC00AD5FBC /* main.c */; };
+		620C7BB8219AE93F00AD5FBC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 620C7BB7219AE93F00AD5FBC /* main.c */; };
 		62196A772195384800D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196A762195384800D9E503 /* main.c */; };
 		62196A82219561D700D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196A81219561D700D9E503 /* main.c */; };
 		62196A8D2195721200D9E503 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62196A8C2195721200D9E503 /* main.c */; };
@@ -92,6 +93,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		620C7BA8219AD0DC00AD5FBC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		620C7BB3219AE93F00AD5FBC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -473,6 +483,8 @@
 		620C7BA1219AAE9A00AD5FBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		620C7BAA219AD0DC00AD5FBC /* 045-栈的中序转后序表达式处理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "045-栈的中序转后序表达式处理"; sourceTree = BUILT_PRODUCTS_DIR; };
 		620C7BAC219AD0DC00AD5FBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		620C7BB5219AE93F00AD5FBC /* 046-队列的基本操作 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "046-队列的基本操作"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620C7BB7219AE93F00AD5FBC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62196A742195384800D9E503 /* 029-循环链表创建(尾插法) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "029-循环链表创建(尾插法)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62196A762195384800D9E503 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62196A7F219561D700D9E503 /* 030-循环链表插入结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "030-循环链表插入结点"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -585,6 +597,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		620C7BA7219AD0DC00AD5FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620C7BB2219AE93F00AD5FBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -912,6 +931,14 @@
 				620C7BAC219AD0DC00AD5FBC /* main.c */,
 			);
 			path = "045-栈的中序转后序表达式处理";
+			sourceTree = "<group>";
+		};
+		620C7BB6219AE93F00AD5FBC /* 046-队列的基本操作 */ = {
+			isa = PBXGroup;
+			children = (
+				620C7BB7219AE93F00AD5FBC /* main.c */,
+			);
+			path = "046-队列的基本操作";
 			sourceTree = "<group>";
 		};
 		62196A752195384800D9E503 /* 029-循环链表创建(尾插法) */ = {
@@ -1274,6 +1301,7 @@
 				620C7B95219AAE8600AD5FBC /* 043-栈的前序表达式处理 */,
 				620C7BA0219AAE9A00AD5FBC /* 044-栈的后序表达式处理 */,
 				620C7BAB219AD0DC00AD5FBC /* 045-栈的中序转后序表达式处理 */,
+				620C7BB6219AE93F00AD5FBC /* 046-队列的基本操作 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1326,6 +1354,7 @@
 				620C7B94219AAE8600AD5FBC /* 043-栈的前序表达式处理 */,
 				620C7B9F219AAE9A00AD5FBC /* 044-栈的后续表达式处理 */,
 				620C7BAA219AD0DC00AD5FBC /* 045-栈的中序转后序表达式处理 */,
+				620C7BB5219AE93F00AD5FBC /* 046-队列的基本操作 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1424,6 +1453,23 @@
 			name = "045-栈的中序转后序表达式处理";
 			productName = "045-栈的中序转后序表达式处理";
 			productReference = 620C7BAA219AD0DC00AD5FBC /* 045-栈的中序转后序表达式处理 */;
+			productType = "com.apple.product-type.tool";
+		};
+		620C7BB4219AE93F00AD5FBC /* 046-队列的基本操作 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620C7BB9219AE93F00AD5FBC /* Build configuration list for PBXNativeTarget "046-队列的基本操作" */;
+			buildPhases = (
+				620C7BB1219AE93F00AD5FBC /* Sources */,
+				620C7BB2219AE93F00AD5FBC /* Frameworks */,
+				620C7BB3219AE93F00AD5FBC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "046-队列的基本操作";
+			productName = "046-队列的基本操作";
+			productReference = 620C7BB5219AE93F00AD5FBC /* 046-队列的基本操作 */;
 			productType = "com.apple.product-type.tool";
 		};
 		62196A732195384800D9E503 /* 029-循环链表创建(尾插法) */ = {
@@ -2130,6 +2176,9 @@
 					620C7BA9219AD0DC00AD5FBC = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					620C7BB4219AE93F00AD5FBC = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					62196A732195384800D9E503 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -2309,6 +2358,7 @@
 				620C7B93219AAE8600AD5FBC /* 043-栈的前序表达式处理 */,
 				620C7B9E219AAE9A00AD5FBC /* 044-栈的后续表达式处理 */,
 				620C7BA9219AD0DC00AD5FBC /* 045-栈的中序转后序表达式处理 */,
+				620C7BB4219AE93F00AD5FBC /* 046-队列的基本操作 */,
 			);
 		};
 /* End PBXProject section */
@@ -2351,6 +2401,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C7BAD219AD0DC00AD5FBC /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		620C7BB1219AE93F00AD5FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620C7BB8219AE93F00AD5FBC /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2768,6 +2826,26 @@
 			name = Debug;
 		};
 		620C7BB0219AD0DC00AD5FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		620C7BBA219AE93F00AD5FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		620C7BBB219AE93F00AD5FBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -3734,6 +3812,15 @@
 			buildConfigurations = (
 				620C7BAF219AD0DC00AD5FBC /* Debug */,
 				620C7BB0219AD0DC00AD5FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		620C7BB9219AE93F00AD5FBC /* Build configuration list for PBXNativeTarget "046-队列的基本操作" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620C7BBA219AE93F00AD5FBC /* Debug */,
+				620C7BBB219AE93F00AD5FBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
