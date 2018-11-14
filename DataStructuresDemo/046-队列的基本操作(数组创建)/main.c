@@ -12,8 +12,8 @@
 #define MAX_SIZE 20
 
 int queue[MAX_SIZE];
-int front = -1;
-int rear = -1;
+int front = -1;//队首索引
+int rear = -1;//队尾d索引
 
 int enterQueue(int value) {
     if (rear < MAX_SIZE) {
