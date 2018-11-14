@@ -15,7 +15,7 @@ int count = 0;
 
 void hanoiTower(int dishCount, int pillar1, int pillar2, int pillar3) {
     if (dishCount == 1) {//终止条件
-        printf("将盘子从柱子 %d 移到 柱子 %d\n", pillar1, pillar3);
+        printf("将盘子从柱子 %d 移到 柱子 %d\n", pillar1, pillar3);//第二步: 将最下面的盘子从1移到3
         count++;
     } else {
         hanoiTower(dishCount - 1, pillar1, pillar3, pillar2);//第一步: 将n-1个盘子从1移到2
