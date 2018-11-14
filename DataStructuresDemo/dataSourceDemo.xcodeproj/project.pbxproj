@@ -933,12 +933,12 @@
 			path = "045-栈的中序转后序表达式处理";
 			sourceTree = "<group>";
 		};
-		620C7BB6219AE93F00AD5FBC /* 046-队列的基本操作 */ = {
+		620C7BB6219AE93F00AD5FBC /* 046-队列的基本操作(数组创建) */ = {
 			isa = PBXGroup;
 			children = (
 				620C7BB7219AE93F00AD5FBC /* main.c */,
 			);
-			path = "046-队列的基本操作";
+			path = "046-队列的基本操作(数组创建)";
 			sourceTree = "<group>";
 		};
 		62196A752195384800D9E503 /* 029-循环链表创建(尾插法) */ = {
@@ -1301,7 +1301,7 @@
 				620C7B95219AAE8600AD5FBC /* 043-栈的前序表达式处理 */,
 				620C7BA0219AAE9A00AD5FBC /* 044-栈的后序表达式处理 */,
 				620C7BAB219AD0DC00AD5FBC /* 045-栈的中序转后序表达式处理 */,
-				620C7BB6219AE93F00AD5FBC /* 046-队列的基本操作 */,
+				620C7BB6219AE93F00AD5FBC /* 046-队列的基本操作(数组创建) */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
