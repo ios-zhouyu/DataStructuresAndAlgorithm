@@ -25,6 +25,7 @@ int enterQueue(int value) {
     return 1;
 }
 
+//判断是否为空就是判断首位标识是否相等
 int deleteQueue() {
     int result = 0;
     if (front != rear) {
