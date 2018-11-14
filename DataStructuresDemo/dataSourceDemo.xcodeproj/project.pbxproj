@@ -46,6 +46,7 @@
 		62BBBB70219C121B00D95D2B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62BBBB6F219C121B00D95D2B /* main.c */; };
 		62BBBB7B219C13EB00D95D2B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62BBBB7A219C13EB00D95D2B /* main.c */; };
 		62BBBB86219C170300D95D2B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62BBBB85219C170300D95D2B /* main.c */; };
+		62BBBB91219C1FA600D95D2B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62BBBB90219C1FA600D95D2B /* main.c */; };
 		62E20A0A2191D7850049524D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E20A092191D7850049524D /* main.c */; };
 		62E20A152191EA540049524D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E20A142191EA540049524D /* main.c */; };
 		62E20A202191F2270049524D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 62E20A1F2191F2270049524D /* main.c */; };
@@ -413,6 +414,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		62BBBB8C219C1FA600D95D2B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		62E20A052191D7850049524D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +621,8 @@
 		62BBBB7A219C13EB00D95D2B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62BBBB83219C170300D95D2B /* 052-递归之创建链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "052-递归之创建链表"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BBBB85219C170300D95D2B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		62BBBB8E219C1FA600D95D2B /* 053-递归之汉诺塔问题 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "053-递归之汉诺塔问题"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BBBB90219C1FA600D95D2B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E20A072191D7850049524D /* 013-单链表删除指定结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "013-单链表删除指定结点"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E20A092191D7850049524D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		62E20A122191EA540049524D /* 014-带头结点单链表清空链表 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "014-带头结点单链表清空链表"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -907,6 +919,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		62BBBB80219C170300D95D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62BBBB8B219C1FA600D95D2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1319,6 +1338,14 @@
 			path = "052-递归之创建链表";
 			sourceTree = "<group>";
 		};
+		62BBBB8F219C1FA600D95D2B /* 053-递归之汉诺塔问题 */ = {
+			isa = PBXGroup;
+			children = (
+				62BBBB90219C1FA600D95D2B /* main.c */,
+			);
+			path = "053-递归之汉诺塔问题";
+			sourceTree = "<group>";
+		};
 		62E20A082191D7850049524D /* 013-带头结点单链表删除指定结点 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1470,6 +1497,7 @@
 				62BBBB6E219C121B00D95D2B /* 050-递归基本操作(n!) */,
 				62BBBB79219C13EB00D95D2B /* 051-递归之斐波那契数列 */,
 				62BBBB84219C170300D95D2B /* 052-递归之创建链表 */,
+				62BBBB8F219C1FA600D95D2B /* 053-递归之汉诺塔问题 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1529,6 +1557,7 @@
 				62BBBB6D219C121B00D95D2B /* 050-递归基本操作 */,
 				62BBBB78219C13EB00D95D2B /* 051-递归之斐波那契数列 */,
 				62BBBB83219C170300D95D2B /* 052-递归之创建链表 */,
+				62BBBB8E219C1FA600D95D2B /* 053-递归之汉诺塔问题 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2207,6 +2236,23 @@
 			productReference = 62BBBB83219C170300D95D2B /* 052-递归之创建链表 */;
 			productType = "com.apple.product-type.tool";
 		};
+		62BBBB8D219C1FA600D95D2B /* 053-递归之汉诺塔问题 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62BBBB92219C1FA600D95D2B /* Build configuration list for PBXNativeTarget "053-递归之汉诺塔问题" */;
+			buildPhases = (
+				62BBBB8A219C1FA600D95D2B /* Sources */,
+				62BBBB8B219C1FA600D95D2B /* Frameworks */,
+				62BBBB8C219C1FA600D95D2B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "053-递归之汉诺塔问题";
+			productName = "053-递归之汉诺塔问题";
+			productReference = 62BBBB8E219C1FA600D95D2B /* 053-递归之汉诺塔问题 */;
+			productType = "com.apple.product-type.tool";
+		};
 		62E20A062191D7850049524D /* 013-单链表删除指定结点 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62E20A0B2191D7850049524D /* Build configuration list for PBXNativeTarget "013-单链表删除指定结点" */;
@@ -2554,6 +2600,9 @@
 					62BBBB82219C170300D95D2B = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					62BBBB8D219C1FA600D95D2B = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					62E20A062191D7850049524D = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -2659,6 +2708,7 @@
 				62BBBB6C219C121B00D95D2B /* 050-递归基本操作 */,
 				62BBBB77219C13EB00D95D2B /* 051-递归之斐波那契数列 */,
 				62BBBB82219C170300D95D2B /* 052-递归之创建链表 */,
+				62BBBB8D219C1FA600D95D2B /* 053-递归之汉诺塔问题 */,
 			);
 		};
 /* End PBXProject section */
@@ -2973,6 +3023,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				62BBBB86219C170300D95D2B /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62BBBB8A219C1FA600D95D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BBBB91219C1FA600D95D2B /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3863,6 +3921,26 @@
 			};
 			name = Release;
 		};
+		62BBBB93219C1FA600D95D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62BBBB94219C1FA600D95D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		62E20A0C2191D7850049524D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4586,6 +4664,15 @@
 			buildConfigurations = (
 				62BBBB88219C170300D95D2B /* Debug */,
 				62BBBB89219C170300D95D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62BBBB92219C1FA600D95D2B /* Build configuration list for PBXNativeTarget "053-递归之汉诺塔问题" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62BBBB93219C1FA600D95D2B /* Debug */,
+				62BBBB94219C1FA600D95D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
