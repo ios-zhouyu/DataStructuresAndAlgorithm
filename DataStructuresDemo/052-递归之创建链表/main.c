@@ -28,6 +28,7 @@ RecursiveList createNode() {
     return node;
 }
 
+//根据递归函数调用的本质,先执行index == length,再往上推,调用上一级函数,实质上是尾插法
 RecursiveList createList(int *arr, int length, int index) {
     RecursiveList head = NULL;
     if (index == length) {//终止条件
@@ -55,7 +56,6 @@ int main(int argc, const char * argv[]) {
     }
     
     RecursiveList list = createList(arr, MAX_SIZE, 0);
-    
     loopList(list);
     
     return 0;
