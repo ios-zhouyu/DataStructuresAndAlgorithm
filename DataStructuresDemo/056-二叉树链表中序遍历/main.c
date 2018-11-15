@@ -74,7 +74,7 @@ TreeList createTree(TreeList root, int *data, int length) {
     return root;
 }
 
-//递归函数调用图分析
+//递归函数调用图分析---左->父->右
 void middleLoopTree(TreeList tree) {
     if (tree != NULL) {
         middleLoopTree(tree->left);
