@@ -31,6 +31,7 @@
 		621B6968219D65930096CC0D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 621B6967219D65930096CC0D /* main.c */; };
 		621B6973219D68A30096CC0D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 621B6972219D68A30096CC0D /* main.c */; };
 		621B697E219D6B950096CC0D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 621B697D219D6B950096CC0D /* main.c */; };
+		621B6989219D778E0096CC0D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 621B6988219D778E0096CC0D /* main.c */; };
 		6275DF3921941F4F00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF3821941F4F00B25D58 /* main.c */; };
 		6275DF44219432EF00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF43219432EF00B25D58 /* main.c */; };
 		6275DF4F219439AA00B25D58 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6275DF4E219439AA00B25D58 /* main.c */; };
@@ -277,6 +278,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		621B6979219D6B950096CC0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		621B6984219D778E0096CC0D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -651,6 +661,8 @@
 		621B6972219D68A30096CC0D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		621B697B219D6B950096CC0D /* 059-二叉树递归创建 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "059-二叉树递归创建"; sourceTree = BUILT_PRODUCTS_DIR; };
 		621B697D219D6B950096CC0D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		621B6986219D778E0096CC0D /* 060-二叉顺序树查找 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "060-二叉顺序树查找"; sourceTree = BUILT_PRODUCTS_DIR; };
+		621B6988219D778E0096CC0D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6275DF3621941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "020-无头结点单链表指定位置插入结点"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6275DF3821941F4F00B25D58 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6275DF41219432EF00B25D58 /* 021-无头结点单链表删除指定结点 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "021-无头结点单链表删除指定结点"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -886,6 +898,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		621B6978219D6B950096CC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621B6983219D778E0096CC0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1332,6 +1351,14 @@
 			path = "059-二叉树递归创建";
 			sourceTree = "<group>";
 		};
+		621B6987219D778E0096CC0D /* 060-二叉顺序树查找 */ = {
+			isa = PBXGroup;
+			children = (
+				621B6988219D778E0096CC0D /* main.c */,
+			);
+			path = "060-二叉顺序树查找";
+			sourceTree = "<group>";
+		};
 		6275DF3721941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1666,6 +1693,7 @@
 				621B6966219D65930096CC0D /* 057-二叉树前序遍历 */,
 				621B6971219D68A30096CC0D /* 058-二叉树后序遍历 */,
 				621B697C219D6B950096CC0D /* 059-二叉树递归创建 */,
+				621B6987219D778E0096CC0D /* 060-二叉顺序树查找 */,
 				62EC28F7218A03E6005F9082 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1732,6 +1760,7 @@
 				621B6965219D65930096CC0D /* 057-二叉树前序遍历 */,
 				621B6970219D68A30096CC0D /* 058-二叉树后序遍历 */,
 				621B697B219D6B950096CC0D /* 059-二叉树递归创建 */,
+				621B6986219D778E0096CC0D /* 060-二叉顺序树查找 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2153,6 +2182,23 @@
 			name = "059-二叉树递归创建";
 			productName = "059-二叉树递归创建";
 			productReference = 621B697B219D6B950096CC0D /* 059-二叉树递归创建 */;
+			productType = "com.apple.product-type.tool";
+		};
+		621B6985219D778E0096CC0D /* 060-二叉顺序树查找 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 621B698A219D778E0096CC0D /* Build configuration list for PBXNativeTarget "060-二叉顺序树查找" */;
+			buildPhases = (
+				621B6982219D778E0096CC0D /* Sources */,
+				621B6983219D778E0096CC0D /* Frameworks */,
+				621B6984219D778E0096CC0D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "060-二叉顺序树查找";
+			productName = "060-二叉顺序树查找";
+			productReference = 621B6986219D778E0096CC0D /* 060-二叉顺序树查找 */;
 			productType = "com.apple.product-type.tool";
 		};
 		6275DF3521941F4F00B25D58 /* 020-无头结点单链表指定位置插入结点 */ = {
@@ -2831,6 +2877,9 @@
 					621B697A219D6B950096CC0D = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					621B6985219D778E0096CC0D = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					6275DF3521941F4F00B25D58 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -3009,6 +3058,7 @@
 				621B6964219D65930096CC0D /* 057-二叉树前序遍历 */,
 				621B696F219D68A30096CC0D /* 058-二叉树后序遍历 */,
 				621B697A219D6B950096CC0D /* 059-二叉树递归创建 */,
+				621B6985219D778E0096CC0D /* 060-二叉顺序树查找 */,
 			);
 		};
 /* End PBXProject section */
@@ -3203,6 +3253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				621B697E219D6B950096CC0D /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621B6982219D778E0096CC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621B6989219D778E0096CC0D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3960,6 +4018,26 @@
 			name = Debug;
 		};
 		621B6981219D6B950096CC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		621B698B219D778E0096CC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N88ZLS3WBS;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		621B698C219D778E0096CC0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -4997,6 +5075,15 @@
 			buildConfigurations = (
 				621B6980219D6B950096CC0D /* Debug */,
 				621B6981219D6B950096CC0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		621B698A219D778E0096CC0D /* Build configuration list for PBXNativeTarget "060-二叉顺序树查找" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				621B698B219D778E0096CC0D /* Debug */,
+				621B698C219D778E0096CC0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
